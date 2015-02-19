@@ -40,3 +40,8 @@ The harder we know
 The harder we forget,  
 That it's not what you're dreaming,  
 But who you dream it with.
+
+Was I the best man that you know?  
+I know this world is for  
+No matter how it came  
+You gave it away.
