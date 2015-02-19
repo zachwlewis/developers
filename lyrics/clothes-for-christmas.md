@@ -46,12 +46,12 @@ The worst thing to have happened yet.
 Even the dog got clothes for Christmas,  
 Not a single toy for the pet.  
 
-Well!
-Clothes!
-Noes!
-Ho ho ho no ho no!
+Well!  
+Clothes!  
+Noes!  
+Ho ho ho no ho no!  
 
-All I got was clothes for Christmas,
-On the best day of the year.
-All I got was clothes for Christmas with the tags still on,
+All I got was clothes for Christmas,  
+On the best day of the year.  
+All I got was clothes for Christmas with the tags still on,  
 Now I know St. Nick ain't real.
