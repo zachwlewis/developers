@@ -45,3 +45,5 @@ Was I the best man that you know?
 I know this world is for  
 No matter how it came  
 You gave it away.
+
+You were the best man.
