@@ -27,3 +27,13 @@ Not remember?
 You had excuses stacked like books  
 Underneath that December.
 
+Are your fantasies aligned  
+With the lines you spoke?  
+Are your dreams intact?  
+Or will they haunt you   
+When you're so very old.
+
+The harder we know  
+The harder we forget,  
+That it's not what you're dreaming,  
+But who you dream it with.
