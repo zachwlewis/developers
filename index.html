@@ -4,12 +4,52 @@
   <title>Developers</title>
   
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   
   <!-- Optional theme -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+
+
   
   <style>
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #eee;
+      border-top: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .footer a {
+      height: 60px;
+      margin: 0;
+      padding: 20px 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .footer a:active {
+      background-color: #bbb;
+    }
+
+    .footer a:hover {
+      background-color: #ccc;
+    }
+
+    .footer span {
+      height: 60px;
+      margin: 0;
+      padding: 20px 10px;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    .container {
+      padding-bottom: 60px;
+    }
+
     .song-name {
       width: 80%;
     }
@@ -30,36 +70,13 @@
     <div class="page-header">
       <h1>Developers</h1>
     </div>
-    
-        <div class="row">
+
+      <!-- Templating -->
+  <script id="album-template" type="text/x-handlebars-template">
+  {{#each albums}}
+  <div class="row">
       <div class="col-md-3">
-        <h3>Tryah<br><small>2016</small></h3>
-      </div>
-      <div class="col-md-9">
-        <table class="table table-condensed table-hover">
-          <col class="song-name">
-          <col class="song-length">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Length</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Tryah/Tryah.mp3">Tryah</a></td>
-              <td>20:27</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="row">
-      <div class="col-md-3">
-        <h3>Clothes For Christmas<br><small>2014</small></h3>
+        <h3>{{title}}<br><small>{{year}}</small></h3>
       </div>
 
       <div class="col-md-9">
@@ -73,194 +90,38 @@
           </tr>
           </thead>
           <tbody>
+          {{#each tracks}}
           <tr>
-            <td><a href="https://s3.amazonaws.com/wearedevelopers/Clothes+For+Christmas/Clothes+For+Christmas.mp3">Clothes For Christmas</a></td>
-            <td>6:08</td>
+            <td><a href="{{src}}">{{title}}</a></td>
+            <td>{{length}}</td>
           </tr>
-          <tr>
-            <td><a href="https://s3.amazonaws.com/wearedevelopers/Clothes+For+Christmas/Every+Season+Is+The+Same.mp3">Every Season Is The Same</a></td>
-            <td>6:19</td>
-          </tr>
-          <tr>
-            <td><a href="https://s3.amazonaws.com/wearedevelopers/Clothes+For+Christmas/Carol+Of+The+Bells.mp3">Carol Of The Bells</a></td>
-            <td>7:48</td>
-          </tr>
+          {{/each}}
           </tbody>
         </table>
       </div>
     </div>
 
     <hr>
-
-    <div class="row">
-      <div class="col-md-3">
-        <h3>Dreams<br><small>2014</small></h3>
-      </div>
-      
-      <div class="col-md-9">
-        <table class="table table-condensed table-hover">
-          <col class="song-name">
-          <col class="song-length">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Length</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Dreams/You+Can+Breathe+In+Space.mp3">You Can Breathe In Space</a></td>
-              <td>9:27</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Dreams/Elysian+Fields+At+Dusk.mp3">Elysian Fields At Dusk</a></td>
-              <td>14:05</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Unyeilding.mp3">Unyeilding</a></td>
-              <td>5:07</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Wandering.mp3">Wandering</a></td>
-              <td>6:07</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Widow%27s+Walk.mp3">Widow's Walk</a></td>
-              <td>20:44</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Voyager.mp3">Voyager</a></td>
-              <td>7:06</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <hr>
-    
-    <div class="row">
-      <div class="col-md-3">
-        <h3>Figures<br><small>2015</small></h3>
-      </div>
-      <div class="col-md-9">
-        <table class="table table-condensed table-hover">
-          <col class="song-name">
-          <col class="song-length">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Length</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Figure+G.mp3">Figure G</a></td>
-              <td>8:11</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
-    <hr>
-
-    <div class="row">
-      <div class="col-md-3">    
-        <h3>Complete Sessions</h3>
-      </div>
-
-      <div class="col-md-9">
-        <table class="table table-condensed table-hover">
-          <col class="song-name">
-          <col class="song-length">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Length</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Complete+Session+(10+December+2015).mp3">10 December 2015</a></td>
-              <td>1:23:11</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Complete+Session+(12+November+2015).mp3">12 November 2015</a></td>
-              <td>50:01</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/05+Jacob%27s+Twenty+Seventh+Birthday.mp3">3 September 2015</a></td>
-              <td>1:49:27</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Complete+Session+(20+August+2015).mp3">Heartbeat (20 August 2015)</a></td>
-              <td>1:17:16</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Complete+Session+(6+August+2015).mp3">6 August 2015</a></td>
-              <td>1:02:40</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Complete+Session+(24+June+2015).mp3">24 June 2015</a></td>
-              <td>57:15</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Complete+Session+(13+May+2015).mp3">13 May 2015</a></td>
-              <td>1:20:51</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <div class="col-md-3">    
-        <h3>Other</h3>
-      </div>
-
-      <div class="col-md-9">
-        <table class="table table-condensed table-hover">
-          <col class="song-name">
-          <col class="song-length">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Length</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Awaken.mp3">Awaken</a></td>
-              <td>4:49</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Dreams/Mountain+Children.mp3">Mountain Children</a></td>
-              <td>2:03</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Children+Dressed+As+Dead+Nobility.mp3">Children Dressed As Dead Nobility</a></td>
-              <td>2:22</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Brooke.mp3">Brooke</a></td>
-              <td>2:55</td>
-            </tr>
-            <tr>
-              <td><a href="https://s3.amazonaws.com/wearedevelopers/Dyson.mp3">Dyson</a></td>
-              <td>10:12</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    {{/each}}
+  </script>
+    <div id="content-placeholder"></div>
   </div>
+
+  <footer class="footer">
+    <a id="play-button" href="#">Play</a>
+    <span id="track-name">Tryah</span>
+  </footer>
   
   <!-- Latest compiled and minified JavaScript -->
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <script src="lib/handlebars-v4.0.5.js"></script>
+  <script src="albums.js"></script>
+  <script>
+  var source = $("#album-template").html();
+  var template = Handlebars.compile(source);
+  $("#content-placeholder").html(template({albums}));
+  </script>
 </body>
 </html>
