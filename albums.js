@@ -35,6 +35,7 @@ var albums = [
   ]},
 
   {title: "Other", year: "", tracks: [ 
+    {title: "Under The Sea", src:"https://s3.amazonaws.com/wearedevelopers/Under+The+Sea.mp3", length: "28:18"},
     {title: "Awaken", src:"https://s3.amazonaws.com/wearedevelopers/Awaken.mp3", length: "4:49"},
     {title: "Mountain Children", src:"https://s3.amazonaws.com/wearedevelopers/Dreams/Mountain+Children.mp3", length: "2:03"},
     {title: "Children Dressed As Dead Nobility", src:"https://s3.amazonaws.com/wearedevelopers/Children+Dressed+As+Dead+Nobility.mp3", length: "2:22"},
