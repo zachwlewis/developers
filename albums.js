@@ -3,6 +3,7 @@
 var albums = [
   {title: "Christmas 2016", year: "2016", tracks: [
       {title: "Buy It For Yourself", src:"https://s3.amazonaws.com/wearedevelopers/Christmas+2016/Buy+It+For+Yourself.mp3", length: "5:31"},
+      {title: "I'm Santa", src:"https://s3.amazonaws.com/wearedevelopers/Christmas+2016/I%27m+Santa.mp3", length: "6:04"},
     ]},
   
   {title: "Tryah", year: "2016", tracks: [ 
