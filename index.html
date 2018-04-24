@@ -129,7 +129,6 @@
   $("#content-placeholder").html(template({albums}));
 
   function playTrack(src, title) {
-    window.console.log(src, title);
     const audioPlayer = document.getElementById('audio-player');
     $("#audio-player").attr("src", src);
     audioPlayer.play();
