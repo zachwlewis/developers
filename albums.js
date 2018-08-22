@@ -12,13 +12,13 @@ var albums = [
   ]},
   
   {title: "Experimental Bullshit (For True Fans)", year: "", tracks: [
-    {title: "Figure G", src:"https://s3.amazonaws.com/wearedevelopers/Figure+G.mp3", length: "8:11"},
     {title: "Under The Sea", src:"https://s3.amazonaws.com/wearedevelopers/Under+The+Sea.mp3", length: "23:18"},
     {title: "Awaken", src:"https://s3.amazonaws.com/wearedevelopers/Awaken.mp3", length: "4:49"},
     {title: "Mountain Children", src:"https://s3.amazonaws.com/wearedevelopers/Dreams/Mountain+Children.mp3", length: "2:03"},
     {title: "Children Dressed As Dead Nobility", src:"https://s3.amazonaws.com/wearedevelopers/Children+Dressed+As+Dead+Nobility.mp3", length: "2:22"},
     {title: "Brooke", src:"https://s3.amazonaws.com/wearedevelopers/Brooke.mp3", length: "2:55"},
     {title: "Dyson", src:"https://s3.amazonaws.com/wearedevelopers/Dyson.mp3", length: "10:12"},
+    {title: "Figure G", src:"https://s3.amazonaws.com/wearedevelopers/Figure+G.mp3", length: "8:11"},
     {title: "Heartbeat (20 August 2015)", src:"https://s3.amazonaws.com/wearedevelopers/Complete+Session+(20+August+2015).mp3", length: "1:17:16"},
   ]},
   
