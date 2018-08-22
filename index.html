@@ -74,6 +74,7 @@
     <div class="page-header">
       <h1>Developers</h1>
       <a href="https://wearedevelopers.bandcamp.com/">Listen to Developers on Bandcamp.</a>
+      <p>Click on any track to listen to it right here.</p>
     </div>
 
       <!-- Templating -->
@@ -92,13 +93,15 @@
           <tr>
             <th>Name</th>
             <th>Length</th>
+            <th>Download</th>
           </tr>
           </thead>
           <tbody>
           {{#each tracks}}
           <tr onclick='playTrack("{{src}}","{{title}}");'>
-            <td><a href="{{src}}">{{title}}</a></td>
+            <td><strong>{{title}}</strong></td>
             <td>{{length}}</td>
+            <td><a href="{{src}}">Download</a></td>
           </tr>
           {{/each}}
           </tbody>
